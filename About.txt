@@ -1,0 +1,14 @@
+AI Engineering - 
+
+    Design AI Models - Builds ML/DL Algorithm for prediction & NLP.
+    Data Handling - Cleans Preprocessing large datasets for training Models.
+    Scale - Cloud Platforms
+    Optimization
+    Collaboration
+
+Role 
+AI/ML
+MLOps
+AI/DS
+NLP Engineer
+AI architect

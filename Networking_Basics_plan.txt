@@ -1,0 +1,147 @@
+============================================================
+NETWORKING FOR AI ENGINEER + FASTAPI — FOCUSED ROADMAP
+============================================================
+
+GOAL:
+Understand how data moves between client → FastAPI → AI model → cloud,
+so you can build, deploy, and debug AI backend systems confidently.
+
+------------------------------------------------------------
+PHASE 1 — CORE MENTAL MODELS
+------------------------------------------------------------
+- What is a computer network
+- LAN vs WAN vs Internet
+- Client–Server architecture
+- OSI model vs TCP/IP model (mapping only)
+
+Outcome:
+Understand that every API call is structured packet exchange.
+
+------------------------------------------------------------
+PHASE 2 — ADDRESSING & ROUTING
+------------------------------------------------------------
+- IPv4 basics
+- Public IP vs Private IP
+- CIDR & subnets (basic understanding)
+- Default gateway
+- NAT (how your FastAPI server becomes reachable)
+
+Outcome:
+Understand how your API gets an address and is reachable from outside.
+
+------------------------------------------------------------
+PHASE 3 — TRANSPORT LAYER (CRITICAL)
+------------------------------------------------------------
+- TCP vs UDP
+- TCP 3-way handshake
+- Reliable delivery & flow control
+- Ports (80, 443, 8000)
+- Sockets (Client ↔ FastAPI server)
+
+Outcome:
+Understand how FastAPI listens on a port and accepts connections.
+
+------------------------------------------------------------
+PHASE 4 — APPLICATION LAYER (WEB + API)
+------------------------------------------------------------
+- DNS
+  - Domain → IP resolution
+- HTTP
+  - Request / Response structure
+  - Methods (GET, POST, etc.)
+  - Status codes
+  - Headers & Body
+- HTTPS
+  - TLS handshake
+  - Certificates
+  - Encrypted transport
+- REST principles
+
+Outcome:
+Understand exactly what happens when a client calls your FastAPI endpoint.
+
+------------------------------------------------------------
+PHASE 5 — FASTAPI NETWORK PAIRING
+------------------------------------------------------------
+- Uvicorn ASGI server
+- Listening sockets
+- HTTP parsing into FastAPI Request objects
+- Response serialization
+- WebSockets for real-time inference
+- Async concurrency over TCP connections
+
+Outcome:
+Understand how FastAPI sits directly on networking layers.
+
+------------------------------------------------------------
+PHASE 6 — DEPLOYMENT NETWORKING
+------------------------------------------------------------
+- Reverse proxy (Nginx)
+- Load balancer concept
+- DNS → Public IP mapping
+- HTTPS termination
+- Docker container networking (bridge)
+- Cloud networking concepts (VPC, security groups)
+
+Outcome:
+Understand how localhost FastAPI becomes a public production AI service.
+
+------------------------------------------------------------
+PHASE 7 — NETWORK DEBUGGING TOOLS
+------------------------------------------------------------
+- curl        → test API endpoints
+- ping        → reachability check
+- traceroute → packet path
+- nslookup   → DNS queries
+- netstat/ss → open listening ports
+
+Outcome:
+Debug “API not reachable” issues without guessing.
+
+------------------------------------------------------------
+PHASE 8 — END-TO-END TRACE DRILL
+------------------------------------------------------------
+Browser / Client
+ → DNS lookup
+ → TCP handshake
+ → TLS handshake
+ → HTTP request
+ → FastAPI application
+ → AI model inference
+ → HTTP response
+
+Outcome:
+Mentally trace every production AI request.
+
+------------------------------------------------------------
+2-WEEK EXECUTION PLAN
+------------------------------------------------------------
+Day 1  - Network purpose + Client-Server
+Day 2  - OSI vs TCP/IP
+Day 3  - IP + NAT
+Day 4  - TCP + Ports + Sockets
+Day 5  - DNS
+Day 6  - HTTP
+Day 7  - HTTPS + TLS
+Day 8  - FastAPI request lifecycle
+Day 9  - Reverse proxy + Load balancer
+Day 10 - Docker networking
+Day 11 - Debugging tools
+Day 12–14 - Full request tracing drills
+
+------------------------------------------------------------
+THE 20% THAT GIVES 80% MASTERY
+------------------------------------------------------------
+- TCP 3-way handshake
+- DNS resolution flow
+- HTTP request/response
+- TLS handshake concept
+- Reverse proxy (Nginx)
+- FastAPI listening on sockets
+
+Master these → You are production-capable.
+
+============================================================
+NEXT STEP AFTER COMPLETION:
+FastAPI + Nginx + HTTPS + Docker full deployment drill
+============================================================
