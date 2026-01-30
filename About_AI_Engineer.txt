@@ -1,4 +1,4 @@
-AI Engineering - 
+AI Engineering Tasks 
 
     Design AI Models - Builds ML/DL Algorithm for prediction & NLP.
     Data Handling - Cleans Preprocessing large datasets for training Models.
@@ -6,9 +6,9 @@ AI Engineering -
     Optimization
     Collaboration
 
-Role 
-AI/ML
-MLOps
-AI/DS
-NLP Engineer
-AI architect
+Role`s
+    AI/ML
+    MLOps
+    AI/DS
+    NLP Engineer
+    AI architect
