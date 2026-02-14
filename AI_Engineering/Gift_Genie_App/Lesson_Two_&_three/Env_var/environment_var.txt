@@ -1,0 +1,66 @@
+# ----------------------------
+# 1. What is an environment variable?
+# ----------------------------
+# Environment variables are key-value pairs stored by the operating system.
+# They act like hidden settings that programs can read at runtime.
+# Example: PATH tells Windows where to look for executables.
+
+# ----------------------------
+# 2. Why and when to use them?
+# ----------------------------
+# - To configure applications without hardcoding values in code.
+# - To store secrets (like API keys or DB passwords) securely outside source files.
+# - To make apps portable across dev, test, and production environments.
+# - To avoid editing code when switching configurations.
+
+# ----------------------------
+# 3. Why are they considered safer?
+# ----------------------------
+# - Secrets stay OUT of source code and version control (GitHub, etc.).
+# - Prevents accidental leaks when sharing code with others.
+# - They can be injected at runtime (CI/CD pipelines, Docker, Kubernetes).
+# - Developers can use different credentials locally without changing code.
+# ⚠️ Note: They are safer than hardcoding, but not bulletproof.
+#   -> Use secret managers (Azure Key Vault, AWS Secrets Manager, HashiCorp Vault)
+#      for production-grade protection.
+
+# ----------------------------
+# 4. Setting environment variables in PowerShell (temporary, session-only)
+# ----------------------------
+$env:DB_HOST = "localhost"   # Database host
+$env:DB_USER = "myuser"      # Database username
+$env:DB_PASS = "mypassword"  # Database password
+
+# Verify they are set
+echo $env:DB_HOST
+echo $env:DB_USER
+echo $env:DB_PASS
+
+# ----------------------------
+# 5. Making them permanent (persist across sessions)
+# ----------------------------
+# This stores the variable under your user profile.
+[System.Environment]::SetEnvironmentVariable("DB_HOST", "localhost", "User")
+[System.Environment]::SetEnvironmentVariable("DB_USER", "myuser", "User")
+[System.Environment]::SetEnvironmentVariable("DB_PASS", "mypassword", "User")
+
+# ----------------------------
+# 6. Using environment variables in Node.js
+# ----------------------------
+# Run this after setting variables in PowerShell
+const dbHost = process.env.DB_HOST;   // safer than hardcoding
+const dbUser = process.env.DB_USER;
+const dbPass = process.env.DB_PASS;
+
+console.log(`Connecting to DB at ${dbHost} with user ${dbUser}`);
+
+# ----------------------------
+# 7. Using environment variables in Python
+# ----------------------------
+import os
+
+db_host = os.getenv("DB_HOST")   # safer than storing in code
+db_user = os.getenv("DB_USER")
+db_pass = os.getenv("DB_PASS")
+
+print(f"Connecting to DB at {db_host} with user {db_user}")

@@ -1,0 +1,118 @@
+# AI Categories Hierarchy and Differentiation
+
+            AI
+            ├── Machine Learning (ML)
+            │   ├── Definition: Algorithms that learn patterns from data.
+            │   ├── Examples: Decision trees, SVMs.
+            │   └── Scope: Predictive/classification tasks, not necessarily generative.
+            │
+            ├── Deep Learning (DL)
+            │   ├── Definition: Subset of ML using neural networks.
+            │   ├── Examples: CNNs, RNNs, Transformers.
+            │   └── Scope: Powers vision, speech, and generative models.
+            │
+            ├── Generative AI (GenAI)
+            │   ├── Definition: AI systems that generate new content (text, images, audio, video, code).
+            │   ├── Examples:
+            │   │   ├── Text: GPT-4, Claude
+            │   │   ├── Images: DALL·E, Stable Diffusion, MidJourney
+            │   │   ├── Audio: ElevenLabs, Jukebox
+            │   │   └── Video: Runway, Pika Labs
+            │   └── Scope: Umbrella term for all generative systems.
+            │
+            │   └── Large Language Models (LLMs)
+            │       ├── Definition: GenAI specialized in text.
+            │       ├── Examples: GPT-4, Claude, LLaMA, Gemini.
+            │       └── Scope: Text-based reasoning, summarization, translation, coding.
+            │
+            │   └── Agentic AI
+            │       ├── Definition: AI that acts autonomously, sets goals, plans, and executes tasks.
+            │       ├── Characteristics:
+            │       │   ├── Goal-driven behavior and adaptability.
+            │       │   ├── Connects with tools, APIs, and databases.
+            │       │   └── Can orchestrate multiple agents for workflows.
+            │       ├── Examples: Autonomous travel planner, workflow automation agents.
+            │       └── Scope: Builds on GenAI/LLMs but emphasizes autonomy and purposeful action.
+            │
+            ├── Computer Vision (CV)
+            │   ├── Definition: AI that interprets images/videos.
+            │   ├── Examples: YOLO, ResNet.
+            │   └── Scope: Focused on perception, not generation.
+            │
+            ├── Reinforcement Learning (RL)
+            │   ├── Definition: AI that learns by trial and error with rewards.
+            │   ├── Examples: AlphaGo, robotics agents.
+            │   └── Scope: Optimizes actions, not content creation.
+            │
+            └── Multimodal Models
+                ├── Definition: AI that handles multiple input/output types.
+                ├── Examples: GPT-4 with vision, Gemini.
+                └── Scope: Combines text + images + audio for richer interaction.
+
+            # Key Differentiation
+            - LLM = A type of GenAI specialized in text.
+            - GenAI = Umbrella term for all generative systems (text, image, audio, video).
+            - Agentic AI = Builds on GenAI/LLMs, adds autonomy, tool usage, and goal-oriented workflows.
+            - Other AI = Broader ML/DL techniques that may classify, predict, or optimize rather than generate.
+
+            👉 All LLMs are GenAI, but not all GenAI are LLMs.  
+            👉 Agentic AI is GenAI taken further — autonomous, tool-using, and goal-driven.
+
+# Difference between GenAI & Agentic AI
+
+            When GenAI (like an LLM or multimodal model) is simply generating text, images, or audio, it’s still just generative.
+            When that same model is connected to tools, APIs, or external systems and can autonomously decide when and how to use them to achieve goals, that’s what’s called Agentic AI.
+
+            Breakdown:
+            - GenAI (Generative AI):
+                - Produces new content (text, images, audio, video).
+                - Needs human prompts to guide it.
+                - Example: Asking GPT-4 to write a poem or Stable Diffusion to generate an image.
+
+            - Agentic AI:
+                - Goes beyond generation — it can act.
+                - Has autonomy: sets sub-goals, plans steps, calls tools, and executes workflows.
+                - Example: An AI travel agent that, when asked “Book me a trip to Tokyo,” will:
+                        - Search flights via APIs.
+                        - Compare hotels.
+                        - Reserve tickets.
+                        - Send confirmations — all without step-by-step human prompting.
+
+# Generative AI Model Naming by Modality
+
+            - LLM (Large Language Model):
+                - Text-focused generative AI.
+                - Examples: GPT-4, Claude, LLaMA.
+
+            - VLM (Vision-Language Model):
+                - Handles both images and text (multimodal).
+                - Examples: GPT-4 with vision, Gemini, CLIP.
+
+            - Diffusion Models / Image Generators:
+                - Specialized in generating images.
+                - Examples: Stable Diffusion, DALL·E, MidJourney.
+                - Sometimes referred to as "Generative Image Models."
+
+            - Audio Models:
+                - Generate or transform speech, music, sound.
+                - Examples: ElevenLabs (speech), Jukebox (music).
+                - Often called "Generative Audio Models" or "Speech Synthesis Models."
+
+            - Video Models:
+                - Generate or edit video content.
+                - Examples: Runway, Pika Labs, Sora.
+                - Sometimes referred to as "Generative Video Models."
+
+            - Multimodal Models:
+                - Work across multiple input/output types (text + image + audio + video).
+                - Examples: Gemini, GPT-4 multimodal.
+                - Commonly called "Multimodal Generative Models."
+
+            # Key Point
+                - "LLM" is the standardized name for text models.
+                - Other modalities don’t have one universal acronym like LLM, but terms such as:
+                - VLM (Vision-Language Model)
+                - Diffusion Models (images)
+                - Generative Audio Models
+                - Generative Video Models
+                are widely used in research and industry.

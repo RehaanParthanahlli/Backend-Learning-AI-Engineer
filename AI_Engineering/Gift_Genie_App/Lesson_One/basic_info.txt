@@ -1,0 +1,11 @@
+We will be using OpenAI's JS library called as openai installed using node npm which is provided by Node.js runtime env.
+
+for Anthropic's Model provider the npm library changed to @anthropic-ai/sdk (ie the models LLMs or GenAI Also changed) but the overall infraustructure remains same. 
+    
+    Note:
+    [
+        All other model providers (Libraries) are also downloaded through the npm.
+        React is also an Library not an runtime environment.
+    ]
+
+No matter which model provider you select the fundamental patterns (Prompt Engineering) remains the same. Also don't be commited to a single MP instead change MPs as per request.

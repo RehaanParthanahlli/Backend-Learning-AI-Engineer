@@ -1,0 +1,33 @@
+Hardcoded means written directly into the code instead of .env file.
+
+For Setting up the request pattern remains same -
+
+    1. Get API Key Simple for OpenAI and Groq but for OpenRouter you must do -
+    
+            free endpoints that may train on inputs
+                Free model providers often retain and/or train on prompts and completions (applies to both chatroom and API usage). See the model page for details.
+
+
+            Enable free endpoints that may publish prompts
+                Allow free model providers to publish your prompts and completions to public datasets.
+
+            But its an privacy issue ( incase of app handling user data)
+    
+    2. Ask the questions whats the URL for accessing this API Key.
+
+    3. Model name as per the MP convention
+
+
+Note:
+[
+    Write code in such a way that even if the model is down you can switch to other model easily using env var.
+    
+    OpenAI API URL
+    https://api.openai.com/v1
+
+    GROQ API URL
+    https://api.groq.com/openai/v1
+
+    OpenRouter API URL
+    https://openrouter.ai/api/v1
+]

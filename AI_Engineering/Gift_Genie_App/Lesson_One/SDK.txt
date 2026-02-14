@@ -1,0 +1,20 @@
+An SDK (Software Development Kit) is a toolbox provided by a company or platform to help developers build applications more easily.
+
+Key Points:
+- Contents: Libraries, APIs, documentation, sample code, debuggers, sometimes compilers.
+- Purpose: Speeds up development with pre-built components and guidelines.
+- Platform-Specific: Designed for a particular OS, hardware, or service.
+  Examples:
+    • Android SDK → build Android apps
+    • iOS SDK → build iPhone/iPad apps
+    • Java Development Kit (JDK) → build Java applications
+- Extra Features: Some SDKs add analytics, ads, or push notifications.
+
+SDK vs API:
+| Aspect      | SDK                                      | API                                            |
+|-------------|------------------------------------------|------------------------------------------------|
+| Definition  | Full toolkit with libraries, docs, tools | Rules/interfaces to interact with software     |
+| Scope       | Broad – helps build apps from scratch    | Narrow – enables communication between systems |
+| Example     | Android SDK (emulator, debugger, libs)   | Google Maps API (embed maps in apps)           |
+
+In short: An SDK helps you *build* software, while an API helps your software *talk* to other software.

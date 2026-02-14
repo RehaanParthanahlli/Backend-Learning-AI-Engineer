@@ -1,0 +1,8 @@
+A - Action ( Role based )
+I -  Input
+M - mission
+V - Verify (Cross model Verification(Critique) or citation )
+CoT - Ask AI to give the Chain of thought which it developed in order to answer and if there was any other better prompt.
+O - original (No one has ever think about it)
+Assertive - (Dont Sugar Coat)
+Structure - Give proper format for LLM to process
