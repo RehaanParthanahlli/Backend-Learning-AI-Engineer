@@ -1,0 +1,3 @@
+Browser, Git / (Linux)
+CLI \ (Windows)
+pwd - print working directory [ tells us the exact path of the directory ]
